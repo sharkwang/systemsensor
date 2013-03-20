@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project sensor with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/home/zheng/workspace/sensor/export/system-probe.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.orientsoft.fusionmonitor.sensor.system.SystemInfoSensor"/>
+                <attribute name="Class-Path" value=". system-probe_lib/sigar.jar system-probe_lib/wlclient.jar system-probe_lib/wljmsclient.jar system-probe_lib/wljmxclient.jar system-probe_lib/xstream-1.3.1.jar"/>
+            </manifest>
+            <fileset dir="/home/zheng/workspace/sensor/bin"/>
+            <fileset dir="/usr/lib/eclipse"/>
+        </jar>
+        <delete dir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <mkdir dir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <copy file="/home/zheng/workspace/sensor/lib/sigar.jar" todir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <copy file="/home/zheng/workspace/sensor/lib/wlclient.jar" todir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <copy file="/home/zheng/workspace/sensor/lib/wljmsclient.jar" todir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <copy file="/home/zheng/workspace/sensor/lib/wljmxclient.jar" todir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+        <copy file="/home/zheng/workspace/sensor/lib/xstream-1.3.1.jar" todir="/home/zheng/workspace/sensor/export/system-probe_lib"/>
+    </target>
+</project>

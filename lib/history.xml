@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.1.2 -m64 -shared">
+      <target file="libsigar-amd64-linux.so" lastModified="13d648d61a0">
+         <source file="../vmcontrol_wrapper.o" lastModified="13d648d5200"/>
+         <source file="../javasigar.o" lastModified="13d648d59d0"/>
+         <source file="../sigar_signal.o" lastModified="13d648d59d0"/>
+         <source file="../sigar_util.o" lastModified="13d648d59d0"/>
+         <source file="../sigar_version.o" lastModified="13d648d59d0"/>
+         <source file="../sigar.o" lastModified="13d648d59d0"/>
+         <source file="../sigar_format.o" lastModified="13d648d59d0"/>
+         <source file="../linux_sigar.o" lastModified="13d648d5db8"/>
+         <source file="../sigar_cache.o" lastModified="13d648d5db8"/>
+         <source file="../sigar_fileinfo.o" lastModified="13d648d5db8"/>
+         <source file="../sigar_ptql.o" lastModified="13d648d61a0"/>
+         <source file="../javavmware.o" lastModified="13d648d61a0"/>
+         <source file="../sigar_getline.o" lastModified="13d648d61a0"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,14 @@
+<MachineConfig>
+  <Server>t3://orient.xx6xx.cn:7001</Server>
+  <JNDIFactory>weblogic.jndi.WLInitialContextFactory</JNDIFactory>
+  <jmsFactory>jms.SensorConnectionFactory</jmsFactory>
+  <Queue>jms.SensorQueue</Queue>
+  <User>weblogic</User>
+  <Passwd>welcome1</Passwd>
+  <sleeptime>20</sleeptime>
+  <App>100</App>
+  <MultiApp>app</MultiApp>
+  <Type>AS</Type>
+  <ActiveDisk>/opt</ActiveDisk>
+  <Filename>app.log</Filename>
+</MachineConfig>
